@@ -14,6 +14,9 @@ module.exports = {
                 'unused-imports',
                 'import'
             ],
+            env: {
+                "es6": true
+            },
             extends: [
                 'airbnb-typescript/base',
                 'plugin:prettier/recommended',
