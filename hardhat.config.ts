@@ -70,12 +70,12 @@ module.exports = {
       chainId: 56,
       accounts: [`0x${MNEMONIC || '1000000000000000000000000000000000000000000000000000000000000000'}`]
     },
-    maticTestnet: {
+    polygonTestnet: {
       url: `https://rpc-mumbai.maticvigil.com`,
       chainId: 80001,
       accounts: [`0x${MNEMONIC || '1000000000000000000000000000000000000000000000000000000000000000'}`],
     },
-    maticMainnet: {
+    polygon: {
       url: `https://rpc-mainnet.matic.quiknode.pro`,
       chainId: 137,
       accounts: [`0x${MNEMONIC || '1000000000000000000000000000000000000000000000000000000000000000'}`],
