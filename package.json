@@ -21,7 +21,8 @@
     "@typechain/hardhat": "^6.0.0",
     "dotenv": "^16.0.1",
     "hardhat": "^2.9.7",
-    "hardhat-contract-sizer": "^2.5.1"
+    "hardhat-contract-sizer": "^2.5.1",
+    "hardhat-gas-reporter": "^1.0.8"
   },
   "devDependencies": {
     "@types/mocha": "^9.1.1",
