@@ -1,6 +1,5 @@
-import { network } from 'hardhat';
 const hre = require('hardhat');
-import { TestERC20 } from '../typechain-types';
+import { TestERC20 } from '../typechain';
 
 async function main() {
     const factory = await hre.ethers.getContractFactory('TestERC20');
