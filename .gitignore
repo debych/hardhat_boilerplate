@@ -1,5 +1,5 @@
 .env
-typechain-types
+typechain
 artifacts
 cache
 node_modules
