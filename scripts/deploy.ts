@@ -2,8 +2,10 @@ const hre = require('hardhat');
 import { TestERC20 } from '../typechain';
 
 async function main() {
+    const args = [];
+
     const factory = await hre.ethers.getContractFactory('TestERC20');
-    const contract = (await factory.deploy()) as TestERC20;
+    const contract = (await factory.deploy(...args)) as TestERC20;
 
     await contract.deployed();
 
@@ -13,7 +15,7 @@ async function main() {
 
     await hre.run('verify:verify', {
         address: contract.address,
-        constructorArguments: []
+        constructorArguments: args
     });
 }
 
